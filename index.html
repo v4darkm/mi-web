@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi-Wbdas</title>
+
+<!-- Font Awesome para iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CONTENEDOR */
+.phone {
+  width: 360px;
+  /*Los Bordes Inicio y Fin*/
+  height: 755px;
+  background: #111;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #000000;
+  position: relative;
+}
+
+/* HEADER */
+.header {
+  background: #f5f5f5;
+  height: 45%;
+  padding-top:50px;
+  text-align: center;
+  padding-top: background: img src("image/lisa.webp") 0px;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #1a1a1a;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+/* PERFIL */
+.profile {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: auto;
+  background: url("image/lisa.webp") center/cover;
+  border: 3px solid #000000;
+  box-shadow: 0 0 20px #FF748D;
+}
+
+.name {
+  margin-top: 11px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #111;
+}
+
+.role {
+  font-size: 13px;
+  color: #777;
+}
+
+/* ICONOS SOCIALES CON COLORES */
+.socials {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-5px) scale(1.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Colores específicos por red social */
+.instagram {
+  background: linear-gradient(135deg, #f56040, #c13584, #833ab4);
+}
+
+.linkedin {
+  background: #0a66c2;
+}
+
+.telegram {
+  background: #229ed9;
+}
+
+.github {
+  background: #24292e;
+}
+
+/* CONTENIDO */
+.content {
+  background: #1a1a1a;
+  height: 60%;
+  padding: 20px;
+  color: white;
+}
+
+/* SECCIONES */
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  gap: 10px;
+}
+
+.skill {
+  flex: 1;
+  margin:5px;
+  padding: 15px;
+  text-align: center;
+  background: #222;
+  border-radius: 10px;
+  color: #00f7ff;
+  font-weight: 500;
+}
+
+/* PROFESIÓN */
+.profession {
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+  color: #ccc;
+}
+
+/* EXPERIENCE */
+.exp {
+  margin-top: 10px;
+  background: #222;
+  padding: 12px;
+  border-radius: 15px;
+  box-shadow: 0 0 1px #4D4D4D;
+}
+
+/* EFECTO NEÓN */
+.skill:hover, .exp:hover {
+  box-shadow: 0 0 5px #00f7ff;
+  transition: 0.3s;
+}
+</style>
+</head>
+
+<body>
+
+<div class="phone">
+
+  <div class="header">
+    <div class="profile"></div>
+    <div class="name">Kim Taemin</div>
+    <div class="role">Software</div>
+
+    <div class="socials">
+      <a href="https://instagram.com/py_taemin" class="instagram" target="_blank" title="Instagram">
+  <i class="fab fa-instagram"></i>
+</a>
+      
+      <a href="#" class="linkedin" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://t.me/+pJE6BVWO0-VmMjgx" class="telegram" target="_blank" title="Telegram">
+        <i class="fab fa-telegram-plane"></i>
+      </a>
+      <a href="https://github.com/v4darkm" class="github" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <div class="section">
+      <h3>Skill</h3>
+      <div class="skills">
+        <div class="skill">84</div>
+        <div class="skill">21</div>
+        <div class="skill">40</div>
+        <div class="skill">53</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Habilidades</h3>
+      <div class="profession">Python, Node.js, Docker, PostgreSQL</div>
+    </div>
+
+    <div class="section">
+      <h3>Experiencia</h3>
+      <div class="exp">
+        Backend Engineer<br>
+        <small>Independent • Ene 23 - Nov 2025</small>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
